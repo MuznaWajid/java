@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var totalMarks = 300;
+        var sub1 = prompt("Enter Your First Subject Marks")
+        var sub2 = prompt("Enter Your Second Subject Marks")
+        var sub3 = prompt("Enter Your Third Subject Marks")
+        var sub1Marks = Number(sub1)
+        var sub2Marks = Number(sub2)
+        var sub3Marks = Number(sub3)
+        var markObtained = sub1Marks+sub2Marks+sub3Marks
+        var percentage = markObtained/totalMarks*100
+
+        
+        if (percentage >= 80){
+            grade = "A-One";
+            remarks ="Excellent";
+        }
+        else if (percentage >= 70){
+            grade = "A";
+            remarks ="Good";
+        }
+        else if (percentage >= 60){
+            grade = "B";
+            remarks ="You Need to improve";
+        }
+        else{
+            
+            grade = "Fail";
+            remarks ="Sorry";
+        }
+        document.write(
+            "<h1>Marks Sheet</h1>"+
+            "<br/>Total Marks: "+totalMarks+
+            "<br/>Marks Obtained : "+markObtained+
+            "<br/> Percentage :"+percentage+"%"+
+            "<br/>Grade : "+grade+
+            "<br/>Remarks : "+remarks
+
+            )
+
+    </script>
+</body>
+</html>

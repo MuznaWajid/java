@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+  
+</body>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+            <div class="d-flex flex-row bd-highlight mb-3"><h1>MY TODO APP </h1></div>
+           
+    <input id="uSERinput" type="text"  placeholder="Enter your task what u want"  required>
+    <ul class="mytask">
+        
+    
+    <div id="mydata">
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3">Thrid</p>
+            <p id="p4">Forth</p>
+        </div>
+    </ul>
+        <input type="button" value="Remove Element" onclick="removeElement()"/>
+       
+    <script>
+    function removeElement(){
+        var mainDiv = document.getElementById("mytask");
+        var p2 = document.getElementById("p3");
+        mainDiv.removeChild(p2);
+    }
+    const clear = document.querySlector(".clear")
+    </script>
+   <button onclick="Addbuttn" class="addbutton">ADD</button>
+</body>
+
+</html>

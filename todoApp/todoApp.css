@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+}
+
+body{
+    background-color: antiquewhite; 
+    width: 100%;  
+    height: 200px;
+    min-width: 350px; 
+    overflow-x: hidden;
+}
+p{
+    font-size: 20px;
+    margin: 0;
+}
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+#para {
+	color: #025F70;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1{
+    border-style: double;
+    border-radius: 5px;
+    background-color: gainsboro;
+    color: darkslategrey;; 
+    text-align: center;
+    margin: 2rem 0 5rem;
+    font-size: 5rem;
+}
+.Heading{
+    font-weight: 600; color: palevioletred;
+}
+.input-div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
+
+#Addbtn{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    background-color: lime;;
+    color: black;
+    margin: 0.26rem;
+    padding: 5px 15px;
+    transition: all 0.75s ease;
+	}
+#Addbtn:hover{
+    opacity: 0.6;
+    background-color: #02798F;
+    color: #FFCD5D;
+}
+ul{
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+.compeleted{
+    color: black;
+    background:lightgreen;
+    text-decoration: line-through;
+	transition: all 0.75s ease;
+}
+.compeleted p{
+    text-decoration: line-through;
+}
+.red{
+    color: white;
+    background:red;
+    text-decoration: line-through;
+	transition: all 0.75s ease;
+}
+.red p{
+    text-decoration: line-through;
+}
+li {
+    list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+li p {
+    width:50%;
+    display: inline-block;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+    border: none;
+    color: black;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
+ /* div{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    background-color: lightslategrey;;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  text-align: center;}   *

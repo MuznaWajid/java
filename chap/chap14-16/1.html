@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Declare an empty array using JS literal notation to storestudent names in future. -->
+  <script> var studentname = []; </script>
+  <!--Declare an empty array using JS object notation to store student names in future. -->
+  <script> var names = {};  </script>
+  <!--  Declare and initialize a strings array. -->
+  <script>var strings = "Muzna"; </script>
+  <!-- Declare and initialize a numbers array -->
+  <script>var numbers = ["1,2,3,4,5"];</script>
+  <!-- Declare and initialize a boolean array. -->
+  <script> var booleans = ["true,false"];</script>
+  <!-- Declare and initialize a mixed array. -->
+  <script> var mixed_array = ["Muzna", true, false, 1, 6, 8];</script>
+  <!-- Declare and Initialize an array and store available education qualifications in Pakista -->
+  <script> var education_qualif_in_Pak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+    document.write("<h1>Qualification:</h1>");
+    document.write("1 " + education_qualif_in_Pak[0] + "<br/>" + "2)" +
+      education_qualif_in_Pak[1] + "<br/>" + "3)" + education_qualif_in_Pak[2] + "<br/>" + "4)" +
+      education_qualif_in_Pak[3] + "<br/>" + "5)" + education_qualif_in_Pak[4] + "<br/>" + "6)" +
+      education_qualif_in_Pak[5] + "<br/>" + "7)" + education_qualif_in_Pak[6] + "<br/>" + "8)" +
+      education_qualif_in_Pak[7] + "<br/>");
+  </script>
+  <!-- Write a program to store 3 student names in an array.Take another array to store score of these three students. 
+    Assume that total marks are 500 for each student, display the scores & percentages of students like:    -->
+  <script>
+    var studentname = ["Michael", "John", "Tony"];
+    var store_score = [320, 230, 480];
+    var total_marks = 500;
+    document.write("Score of " + studentname[0] + "is" + store_score[0] + ".Percentage" +
+      store_score[0] / total_marks * 100 + "%<br/>");
+    document.write("Score of " + studentname[1] + "is" + store_score[1] + ".Percentage" +
+      store_score[1] / total_marks * 100 + "%<br/>");
+    document.write("Score of " + studentname[2] + "is" + store_score[2] + ".Percentage" +
+      store_score[2] / total_marks * 100 + "%<br/>");
+  </Script>
+  <!--Initialize an array with color names. Display the array elements in your browser-->
+  <script>
+    var color_names = ["Black", "Blue", "Brown"];
+    alert("ColorName:", "<p>" + color_names);
+    document.write(color_names + "<p>");
+    // Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array.Display the updated array in your browser.
+    var add_color = prompt("Which color do you want to add at the beginning");
+    color_names.unshift(add_color);
+    alert(color_names);
+    document.write(color_names + "<p>");
+    //  Ask the user what color he/she wants to add to the end & add that color to the end of the array. Display the updated array in your browser. 
+    var updated_color = prompt("Which color do you want to add to the end");
+    color_names.push(updated_color);
+    alert(color_names);
+    document.write(color_names + "<p>");
+    //  Add two more color to the beginning of the array. Display the updated array in your browser. 
+    var add_another_color = prompt("Which color do you want to add two more color");
+    color_names.splice(0, 0, "mehroon", "red");
+    alert(color_names);
+    document.write(color_names + "<p>");
+    //  Delete the last color in the array. Display the updated array in your browser. 
+    var delete_color = prompt("Which color do you want delete to at the beginning");
+    color_names.shift(delete_color);
+    alert(color_names);
+    document.write(color_names + "<p>");
+    // Ask the user at which index he/she wants to add a color & color name. Then add the color to desired position/index.
+    //  . Display the updated array in your browser. g
+    //  Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete. Then 
+    var update_color = prompt("Which color do you want add a color with their position");
+    var index_color = prompt("Which color do you want delete color & how many");
+    color_names.splice(2, 2);
+    alert(color_names);
+    document.write(color_names + "<p>");
+  </script>
+  <!--  Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.  -->
+  <script>
+    var Score_of_Stud = [320, 230, 480, 120];
+    document.write("Score of Students :" + Score_of_Stud + "<br/>");
+    Score_of_Stud.sort();
+    document.write(" Order Score of Students :" + Score_of_Stud + "<br/>");
+  </script>
+  <!-- Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array. 12 -->
+  <script>
+    var Cities_list = ["Karachi", "Lahore", "Islamabad", "Quetta", "Pershawar"];
+    var selected_List = Cities_list.slice(2, 4);
+    document.write("Cities List:" + "<br/>" + Cities_list + "<br/>");
+    document.write("Selected Cities List: " + "<br/>" + selected_List);
+  </script>
+  <!--  Write a program to create a single string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)  -->
+  <script>
+    var array = ["This", "is", "my", "cat"];
+    var single_array = array.join("");
+    document.write("Array:<br>" + array + "<br/>");
+    document.write("String:<br>" + array + "<br/>");
+  </script>
+  <!--  Create a new array. Store values one by one in such a way that you can access the values in the order 
+    in which they were stored. (FIFO-First In First Out)  -->
+  <script>
+    var device = ["Keyboard", "Mouse", "Printer", "Monitor"]
+    document.write("Devices:<br/>" + device + "<br/><p>");
+    var out = device.shift();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.shift();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.shift();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.shift();
+    document.write("Out:<br/>" + out + "<br/>");
+  </script>
+  <!--   Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last InFirst Out) -->
+  <script>
+    var device = ["Keyboard", "Mouse", "Printer", "Monitor"]
+    document.write("Devices:<br/>" + device + "<br/><p>");
+    var out = device.pop();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.pop();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.pop();
+    document.write("Out:<br/>" + out + "<br/>");
+    var out = device.pop();
+    document.write("Out:<br/>" + out + "<br/>");
+  </script>
+  <!-- Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array.
+   Display the following dropdown/select menu in your browser using document.write() method:  -->
+  <script>
+    var phone_manufacturers = ["Apple", "Samsung", "Motrola", "Nokia", "Sony", "Haier"];
+    document.write("<select><option>" + phone_manufacturers[0] + "</option>" +
+      "<option>" + phone_manufacturers[1] + "</option>" +
+      "<option>" + phone_manufacturers[2] + "</option>" +
+      "<option>" + phone_manufacturers[3] + "</option>" +
+      "<option>" + phone_manufacturers[4] + "</option>" +
+      "<option>" + phone_manufacturers[5] + "</option>" +
+      "</select>");
+  </script>
+</body>
+
+</html>

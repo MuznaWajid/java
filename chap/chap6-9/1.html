@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>math expres</title>
+</head>
+
+<body>
+    <!-- QUESTION 1 -->
+    <script> 
+    var a = 10;
+    document.write("<br/>Result: <br/> The value of a is: "+a+" <br/>..............."+
+    "<br/><br/>The value of ++a  is: "+(++a)+
+    " <br/> Now the  value of a is: "+a+"<br/><br/>The value of a++  is: "+(a++)+
+    " <br/> Now the  value of a is: "+a+"<br/><br/>The value of --a  is: "+(--a)+
+    " <br/> Now the  value of a is: "+a+"<br/><br/>The value of a--  is: "+(a--)+
+    " <br/> Now the  value of a is: "+a+"<br/>");
+    </script>
+    <!-- QUESTION 2 -->
+    <script>
+var a = 2 , b= 1;
+var result = --a - --b + ++b + b--;
+document.write("a is ??"+a+"<br/>b is ??"+b+"<br/>result is??"+result+"<br>");
+</script>
+    <!-- Question 3 -->
+    <script>
+var username = prompt("Enter Your Name:"); alert("Welcome "+username+ " Good to see You hope u like it :)")
+</script>
+    <!-- Question 4 -->
+    <script>
+var table = prompt("Enter A Number For A table" ,"5");var m = Number(table); var num =1;
+document.write(
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"+
+m+ " x "+num+" = "+(m*num++)+"<br/>"
+)
+</script>
+    <!-- QUESTION 6 -->
+    <script>
+        var subj1 = prompt("Enter A First Number")
+        var subj2 = prompt("Enter A Second Number");
+        var subj3 = prompt("Enter A Third Number");
+        var subj1marks = prompt("Enter A First Subject Marks");
+        var a = Number(subj1marks)
+        var subj2marks = prompt("Enter A Second Subject Marks");
+        var b = Number(subj2marks)
+        var subj3marks = prompt("Enter A Third Subject Marks");
+        var c = Number(subj3marks)
+        var totalmarks = 100
+        document.write(
+            "<table>" +
+            "<tr><th>Subject</th><th>Total Mark</th><th>Obtained Marks</th><th>Percentage</th></tr>" +
+            "<tr><td>" + subj1 + "</td><td>" + totalmarks + "</td><td>" + a + "</td><td>" + (a / totalmarks * totalmarks) + "%</td><tr>" +
+            "<tr><td>" + subj2 + "</td><td>" + totalmarks + "</td><td>" + b + "</td><td>" + (b / totalmarks * totalmarks) + "%</td><tr>" +
+            "<tr><td>" + subj3 + "</td><td>" + totalmarks + "</td><td>" + c + "</td><td>" + (c / totalmarks * totalmarks) + "%</td><tr>" + 
+        "<tr><td></td><td>" + (totalmarks * 3) + "</td><td>" + (a + b + c) + "</td><td>" + ((a + b + c) / (totalmarks * 3) * 100) + "%</td><tr>"+
+            "</table>"
+            );
+
+            
+    </script>
+</body>
+
+</html>

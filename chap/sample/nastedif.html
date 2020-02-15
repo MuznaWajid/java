@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userName = prompt("Enter your user name");
+        var pass= prompt("Enter your Password");
+        if(userName=="admin"){ //yaha pehle check kre ga agar mera username admin hai to password match kre
+            if(pass=="admin"){ // yaha agar mera username match kr gaya phir wo password match kre ga
+                alert("welcome To the Website");// ager match ho gaya phitr ye alert aye ga
+            }
+            else{
+                alert("Enter a valid Password");//warna ye alert aye ga
+            }
+        }else { // yaha agar user name match nai kre ga to ye alert de ga
+            alert("You Enter a Wrong Username")
+        }
+//is ko run krein
+    </script>
+</body>
+</html>

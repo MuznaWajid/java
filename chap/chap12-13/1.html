@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Question 1 -->
+    <script>
+        input = prompt("Enter any number or character")
+        if (Number(input)) { alert("Your input is a Number") }
+        else if (input >= "a" && input <= "z") { alert("Your input is a Lower case") }
+        else if (input >= "A" && input <= "Z") { alert("Your input is a Upper case") }
+        else { alert("Check  your Char") };
+    </script>
+    <!-- Question 2 -->
+    <script>
+        var num1 = +prompt("Enter first integer")
+        var num2 = +prompt("Enter second  integer")
+        if (num1 > num2) { alert(num1 + "is larger than" + num2) }
+        else if (num1 < num2) { alert(num2 + "is larger than" + num1) }
+        else { alert(num1 + "and" + num2 + "are equal") }
+    </script>
+
+    <!-- Question 3 -->
+    <script>
+        input = prompt("Enter any character")
+        if (input == "a" || input == "e" || input == "i" || input == "o" || input == "u") { alert("true It's a vowel") }
+        else { alert("false  its not a vowels") }
+    </script>
+    <!-- Question 4 -->
+    <script>
+        input = prompt("takes input from user")
+        if (input > 0) { alert("The number is positive;)") }
+        else if (input < 0) { alert("The number is negative;)") }
+        else if (input == 0) { alert("The number is Zero;)") }
+        else { alert("Try again:(") }
+    </script>
+    <!-- Question 5 -->
+    <script>
+        var password = "abc5909";
+        var userpassword = prompt("Enter your password");
+        if (userpassword === null || userpassword === "") { alert("Please enter your password"); }
+        else if (userpassword === password) { alert("Correct! The password you entered matches the original password"); }
+        else { alert("Incorrect password"); }
+    </script>
+    <!-- Question 6 -->
+    <script>
+        var greeting; var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day"; }
+        else {greeting = "Good evening";
+        }
+    </script> -->
+    <!-- Question 7 -->
+    <script>
+        var time = +prompt("What Time is it?")
+        if (time >= 0000 && time < 1200) { alert("GOOD MORNING") }
+        if (time >= 1200 && time < 1700) { alert("GOOD AFTERNOON") }
+        if (time >= 1700 && time < 2100) { alert("GOOD EVENING") }
+        if (time >= 2100 && time <= 2359) { alert("GOOD NIGHT") }
+    </script>
+</body> 
+
+</html>
